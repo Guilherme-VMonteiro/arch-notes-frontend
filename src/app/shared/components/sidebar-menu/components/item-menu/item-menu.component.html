@@ -1,0 +1,16 @@
+@if (children) {
+<li class="px-2 list-none w-full">
+  <a
+    type="button"
+    [routerLink]="menu.link"
+    class="flex w-full text-left no-underline pl-4 p-2 item-menu text-primary transition-colors transition-ease-in-out transition-duration-500 hover:bg-primary border-round"
+    >{{ menu.label }}</a
+  >
+</li>
+} @else {
+<div class="py-2">
+  <span class="font-bold">
+    {{ menu.label }}
+  </span>
+</div>
+}

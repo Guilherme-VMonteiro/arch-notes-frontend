@@ -1,0 +1,6 @@
+<ng-container *ngFor="let menuItem of menu">
+  <app-item-menu [menu]="menuItem"></app-item-menu>
+  <ng-container *ngFor="let menuChildren of menuItem.childrens">
+    <app-item-menu [menu]="menuChildren" [children]="true"></app-item-menu>
+  </ng-container>
+</ng-container>
